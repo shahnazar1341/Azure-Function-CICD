@@ -13,9 +13,8 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-
+   
 steps:
-- task: NuGetToolInstaller@1
  
 - script: dotnet build 'FunctionApp1.sln' --configuration 'Release'
   displayName: 'Build solution'
